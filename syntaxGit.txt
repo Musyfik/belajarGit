@@ -1,0 +1,26 @@
+perintah-perintah di Git Bash :
+- celar                       : untuk menghapus seluruh isi yang ada di terminal 
+- git status                  : untuk melihat status keadaan git apakah sedang ada perubahan baik itu di staging mau pun di luar itu
+- git init                    : untuk menginisialisasi folder yang ingin dijadikan repository Git
+- git add <namaFile> <namaF>  : untuk memindahkan dari untracked area ke staging area buat di commit
+- git add .                   : untuk memindahkan dari untracked area ke staging area buat di commit secara keseluruhan
+- git commit -m "penjelasanC" : untuk meng-commit dari staging area dengan menambahkan penjelasan commit nya
+- git branch                  : untuk melihat list branch yang ada dan status branch yang sedang digunakan
+- git branch <namaBranchBaru> : untuk membuat branch baru [ salah satu syarat membuat branch baru adalah ketika sudah ada minimalnya satu commit yang dilakukan ]
+- git checkout <namaBranch>   : untuk berpindah ke branch yang sudah ada
+- git branch -d <namaBranch>  : untuk menghapus branch, pastikan sudah berada diluar branch yang mau dihapus
+- git branch -D <namaBranch>  : untuk mengahpus branch secara paksa, artinya di branch yang kita mau hapus itu ada perubahan commit yang belum di merge
+- git merge <namaBranch>      : untuk me-merge(menggabungkan) suatu branch, pastikan kita sedang berada di branch yang mau di tambahkan oleh branch yang mau menambahkan
+- git config --global user.name : untuk mengetahui username dari git kita, jika ingin mengganti username tinggal tambahkan username yang dimaksud diakhir syntax
+- git config --global user.emal : untuk mengetahui email dari git kita, jika ingin mengganti email tinggal tambahkan email yang dimaksud diakhir syntax
+- code .                      : untuk membuka vscode
+- git config --get core.editor: untuk melihat code editor yang ter-config di git bash
+- git config --global core.editor "code --wait" : untuk men-set vscode sebagai code editor di git bash
+- git .................. -e   : untuk melihatnya di code editor yang ter-config di git bash
+- git remote add <namaNya> <linkUrlnya> : untuk meremote repo yang ada di github
+- git remote                  : untuk mengetahui siapa aja yang kita remote
+- git remote -v               : untuk mengetahui detail dari siapa aja yang kita remote
+- git log                     : untuk mengetahui history apa saja yang telah kita commit
+
+note :
+penting untuk mengetahui credential yang ter-set di komputer, caranya klik windows kemudian cari "Credential Manager". karena untuk mempush dari git ke github harus sama akunnya, dengan kata lain kita dapat melihat aturannya di credential manager tersebut
